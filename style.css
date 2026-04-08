@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* background-color:  */
+    --bg-primary-color:#0c0c0c;
+    /* text color */
+    --text-primary-color: #f0f0f0 ;
+    /* Spacing variables */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl:40px;
+    --space-3xl: 48px;
+    /* Border color */
+    --border-primary-color: #333333;
+    /* border radius */
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;   
+    --border-radius-2xl: 24px;
+}
+
+html,
+body {
+    height:100%;
+    width:100%;
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+main,section {
+    height: 100%;
+    width: 100%;
+}
+section{
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    /* background-color: rgb(22, 22, 85); */
+    gap: var(--space-lg);
+}
+
+section .infos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.info{
+    height: fit-content;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+}
+/* .board{
+    border: 1px solid var(--border-primary-color);
+} */
+.board{
+    width: 600px;
+    height: 600px;   /* 🔥 FIXED HEIGHT */
+    border: 2px solid var(--border-primary-color);
+    border-radius: var(--border-radius-md);
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+    margin: auto;
+}
+.block{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-primary-color)   ;
+    border-radius: 50px;
+
+}
+
+/* button.reset{
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+    background-color: transparent;
+    color: var(--text-primary-color);
+    cursor: pointer;
+    margin-top: var(--space-lg);
+    display: flex;
+    justify-content: center;
+   
+}    */
